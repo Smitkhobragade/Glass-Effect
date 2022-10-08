@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Oswald',sans-serif;
+  /* font-weight: 900; */
+  text-transform: uppercase;
+}
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(pexels-pixabay-220182.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+section h2{
+  font-size: 10em;
+  color: #fff;
+  pointer-events: none;
+  text-shadow: 0 20px 20px #000;
+}
+section .glass{
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 20px 20px rgba(0,0,0);
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: 0.01s;
+}
